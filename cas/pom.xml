@@ -61,13 +61,6 @@
             <artifactId>cas-server-support-jdbc-drivers</artifactId>
             <version>${cas.version}</version>
         </dependency>
-        <!--支持三种校验方式，包括文件存储用户校验器、拒绝用户校验器、shiro校验器-->
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-support-generic</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-
     </dependencies>
 
     <dependencyManagement>
