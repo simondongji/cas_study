@@ -67,6 +67,12 @@
             <artifactId>cas-server-support-generic</artifactId>
             <version>${cas.version}</version>
         </dependency>
+        <!--restj认证-->
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-rest-authentication</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
