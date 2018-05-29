@@ -1,0 +1,478 @@
+2018-05-29 10:41:59.544  INFO 6928 --- [main] c.s.i.casclient.CasClientApplication     : Starting CasClientApplication on DESKTOP-1L37PM6 with PID 6928 (E:\ibase2.0\ibase_springboot\cas-client\target\classes started by simon in E:\ibase2.0\ibase_springboot\cas-client)
+2018-05-29 10:41:59.560  INFO 6928 --- [main] c.s.i.casclient.CasClientApplication     : No active profile set, falling back to default profiles: default
+2018-05-29 10:41:59.659  INFO 6928 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5aa4b8a3: startup date [Tue May 29 10:41:59 CST 2018]; root of context hierarchy
+2018-05-29 10:42:03.238  INFO 6928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8103 (http)
+2018-05-29 10:42:03.298  INFO 6928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-29 10:42:03.299  INFO 6928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-29 10:42:03.324  INFO 6928 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\tools\apps\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;D:\dev\tools\apps\Java\jdk1.8.0_31\bin;D:\dev\tools\apps\maven\bin;D:\dev\tools\apps\svn\bin;D:\dev\tools\apps\TortoiseGit\bin;D:\dev\tools\apps\Git\cmd;D:\dev\tools\apps\putty\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.]
+2018-05-29 10:42:04.139  INFO 6928 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-29 10:42:04.164  INFO 6928 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-29 10:42:04.168  INFO 6928 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4509 ms
+2018-05-29 10:42:04.554  INFO 6928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-29 10:42:04.556  INFO 6928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-29 10:42:04.557  INFO 6928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-29 10:42:04.557  INFO 6928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-29 10:42:04.559  INFO 6928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-05-29 10:42:04.560  INFO 6928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-05-29 10:42:04.561  INFO 6928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-05-29 10:42:04.561  INFO 6928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-05-29 10:42:04.563  INFO 6928 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-29 10:42:04.610  INFO 6928 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://passport.sso.com:8100/cas]
+2018-05-29 10:42:04.634  INFO 6928 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://passport.sso.com:8103]
+2018-05-29 10:42:04.661  INFO 6928 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-05-29 10:42:04.662  INFO 6928 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://passport.sso.com:8100/cas]
+2018-05-29 10:42:04.666  INFO 6928 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://passport.sso.com:8103]
+2018-05-29 10:42:04.668  INFO 6928 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://passport.sso.com:8100/cas]
+2018-05-29 10:42:04.669  INFO 6928 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-05-29 10:42:04.669  INFO 6928 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.southgis.ibase.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-05-29 10:42:04.677 ERROR 6928 --- [localhost-startStop-1] o.j.c.c.a.AuthenticationFilter           : Could not instantiate class [com.southgis.ibase.cas.auth.SimpleUrlPatternMatcherStrategy]
+
+java.lang.IllegalArgumentException: com.southgis.ibase.cas.auth.SimpleUrlPatternMatcherStrategy class not found.
+	at org.jasig.cas.client.util.ReflectUtils.loadClass(ReflectUtils.java:53) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.util.ReflectUtils.newInstance(ReflectUtils.java:65) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.authentication.AuthenticationFilter.initInternal(AuthenticationFilter.java:110) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.util.AbstractCasFilter.init(AbstractCasFilter.java:72) [cas-client-core-3.5.0.jar:3.5.0]
+	at org.apache.catalina.core.ApplicationFilterConfig.initFilter(ApplicationFilterConfig.java:285) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterConfig.<init>(ApplicationFilterConfig.java:112) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:4637) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5282) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2018-05-29 10:42:04.959  INFO 6928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 10:42:05.403  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5aa4b8a3: startup date [Tue May 29 10:41:59 CST 2018]; root of context hierarchy
+2018-05-29 10:42:05.565  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.southgis.ibase.casclient.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-05-29 10:42:05.576  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2()
+2018-05-29 10:42:05.581  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-05-29 10:42:05.582  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-05-29 10:42:05.588  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-29 10:42:05.594  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-29 10:42:05.636  INFO 6928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-05-29 10:42:05.677  INFO 6928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 10:42:05.682  INFO 6928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 10:42:05.815  INFO 6928 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-29 10:42:07.100  INFO 6928 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-29 10:42:07.385  INFO 6928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8103 (http) with context path ''
+2018-05-29 10:42:07.385  INFO 6928 --- [main] c.s.i.casclient.CasClientApplication     : Started CasClientApplication in 9.002 seconds (JVM running for 15.156)
+2018-05-29 10:46:10.574  INFO 6928 --- [http-nio-8103-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-29 10:46:10.575  INFO 6928 --- [http-nio-8103-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-29 10:46:10.614  INFO 6928 --- [http-nio-8103-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2018-05-29 10:47:41.869  INFO 6928 --- [Thread-4] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5aa4b8a3: startup date [Tue May 29 10:41:59 CST 2018]; root of context hierarchy
+2018-05-29 10:47:41.884  INFO 6928 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-29 14:56:54.139  INFO 16736 --- [main] c.s.i.casclient.CasClientApplication     : Starting CasClientApplication on DESKTOP-1L37PM6 with PID 16736 (E:\ibase2.0\ibase_springboot\cas-client\target\classes started by simon in E:\ibase2.0\ibase_springboot\cas-client)
+2018-05-29 14:56:54.146  INFO 16736 --- [main] c.s.i.casclient.CasClientApplication     : No active profile set, falling back to default profiles: default
+2018-05-29 14:56:54.461  INFO 16736 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13add993: startup date [Tue May 29 14:56:54 CST 2018]; root of context hierarchy
+2018-05-29 14:56:56.213  INFO 16736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8103 (http)
+2018-05-29 14:56:56.247  INFO 16736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-29 14:56:56.248  INFO 16736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-29 14:56:56.262  INFO 16736 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\tools\apps\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;D:\dev\tools\apps\Java\jdk1.8.0_31\bin;D:\dev\tools\apps\maven\bin;D:\dev\tools\apps\svn\bin;D:\dev\tools\apps\TortoiseGit\bin;D:\dev\tools\apps\Git\cmd;D:\dev\tools\apps\putty\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.]
+2018-05-29 14:56:56.574  INFO 16736 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-29 14:56:56.581  INFO 16736 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-29 14:56:56.583  INFO 16736 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2122 ms
+2018-05-29 14:56:56.809  INFO 16736 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-29 14:56:56.816  INFO 16736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-29 14:56:56.817  INFO 16736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-29 14:56:56.820  INFO 16736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-29 14:56:56.822  INFO 16736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-29 14:56:57.009  INFO 16736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 14:56:57.315  INFO 16736 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13add993: startup date [Tue May 29 14:56:54 CST 2018]; root of context hierarchy
+2018-05-29 14:56:57.426  INFO 16736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.southgis.ibase.casclient.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-05-29 14:56:57.431  INFO 16736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2()
+2018-05-29 14:56:57.433  INFO 16736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-05-29 14:56:57.434  INFO 16736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-05-29 14:56:57.441  INFO 16736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-29 14:56:57.442  INFO 16736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-29 14:56:57.496  INFO 16736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 14:56:57.498  INFO 16736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 14:56:57.626  INFO 16736 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-29 14:56:57.920  INFO 16736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-29 14:56:57.987 ERROR 16736 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8103]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8103]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.southgis.ibase.casclient.CasClientApplication.main(CasClientApplication.java:136) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:496) [spring-boot-maven-plugin-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 19 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_31]
+	at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.8.0_31]
+	at sun.nio.ch.Net.bind(Net.java:428) ~[na:1.8.0_31]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.8.0_31]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_31]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 20 common frames omitted
+
+2018-05-29 14:56:58.036  INFO 16736 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-05-29 14:56:58.069  INFO 16736 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-29 14:56:58.100 ERROR 16736 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8103 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8103, or configure this application to listen on another port.
+
+2018-05-29 14:56:58.109  INFO 16736 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13add993: startup date [Tue May 29 14:56:54 CST 2018]; root of context hierarchy
+2018-05-29 14:56:58.117  INFO 16736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-29 14:57:35.124  INFO 18920 --- [main] c.s.i.casclient.CasClientApplication     : Starting CasClientApplication on DESKTOP-1L37PM6 with PID 18920 (E:\ibase2.0\ibase_springboot\cas-client\target\classes started by simon in E:\ibase2.0\ibase_springboot\cas-client)
+2018-05-29 14:57:35.130  INFO 18920 --- [main] c.s.i.casclient.CasClientApplication     : No active profile set, falling back to default profiles: default
+2018-05-29 14:57:35.224  INFO 18920 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d775e99: startup date [Tue May 29 14:57:35 CST 2018]; root of context hierarchy
+2018-05-29 14:57:37.450  INFO 18920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8103 (http)
+2018-05-29 14:57:37.523  INFO 18920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-29 14:57:37.528  INFO 18920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-29 14:57:37.602  INFO 18920 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\tools\apps\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;D:\dev\tools\apps\Java\jdk1.8.0_31\bin;D:\dev\tools\apps\maven\bin;D:\dev\tools\apps\svn\bin;D:\dev\tools\apps\TortoiseGit\bin;D:\dev\tools\apps\Git\cmd;D:\dev\tools\apps\putty\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.]
+2018-05-29 14:57:38.047  INFO 18920 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-29 14:57:38.058  INFO 18920 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-29 14:57:38.063  INFO 18920 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2839 ms
+2018-05-29 14:57:38.437  INFO 18920 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-29 14:57:38.447  INFO 18920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-29 14:57:38.490  INFO 18920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-29 14:57:38.496  INFO 18920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-29 14:57:38.497  INFO 18920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-29 14:57:38.835  INFO 18920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 14:57:39.337  INFO 18920 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d775e99: startup date [Tue May 29 14:57:35 CST 2018]; root of context hierarchy
+2018-05-29 14:57:39.500  INFO 18920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.southgis.ibase.casclient.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-05-29 14:57:39.508  INFO 18920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-05-29 14:57:39.511  INFO 18920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2()
+2018-05-29 14:57:39.521  INFO 18920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-05-29 14:57:39.588  INFO 18920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-29 14:57:39.630  INFO 18920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-29 14:57:39.680  INFO 18920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 14:57:39.682  INFO 18920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 14:57:39.786  INFO 18920 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-29 14:57:39.952  INFO 18920 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-29 14:57:40.040  INFO 18920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8103 (http) with context path ''
+2018-05-29 14:57:40.047  INFO 18920 --- [main] c.s.i.casclient.CasClientApplication     : Started CasClientApplication in 6.161 seconds (JVM running for 12.001)
+2018-05-29 14:57:52.315  INFO 18920 --- [http-nio-8103-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-29 14:57:52.316  INFO 18920 --- [http-nio-8103-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-29 14:57:52.349  INFO 18920 --- [http-nio-8103-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-05-29 14:58:40.742  INFO 18920 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d775e99: startup date [Tue May 29 14:57:35 CST 2018]; root of context hierarchy
+2018-05-29 14:58:40.744  INFO 18920 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-29 14:59:16.959  INFO 10620 --- [main] c.s.i.casclient.CasClientApplication     : Starting CasClientApplication on DESKTOP-1L37PM6 with PID 10620 (E:\ibase2.0\ibase_springboot\cas-client\target\classes started by simon in E:\ibase2.0\ibase_springboot\cas-client)
+2018-05-29 14:59:16.965  INFO 10620 --- [main] c.s.i.casclient.CasClientApplication     : No active profile set, falling back to default profiles: default
+2018-05-29 14:59:17.048  INFO 10620 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52f47e9d: startup date [Tue May 29 14:59:17 CST 2018]; root of context hierarchy
+2018-05-29 14:59:19.209  INFO 10620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8103 (http)
+2018-05-29 14:59:19.278  INFO 10620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-29 14:59:19.279  INFO 10620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-29 14:59:19.347  INFO 10620 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\tools\apps\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;D:\dev\tools\apps\Java\jdk1.8.0_31\bin;D:\dev\tools\apps\maven\bin;D:\dev\tools\apps\svn\bin;D:\dev\tools\apps\TortoiseGit\bin;D:\dev\tools\apps\Git\cmd;D:\dev\tools\apps\putty\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.]
+2018-05-29 14:59:19.875  INFO 10620 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-29 14:59:19.884  INFO 10620 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-29 14:59:19.897  INFO 10620 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2849 ms
+2018-05-29 14:59:20.193  INFO 10620 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-29 14:59:20.205  INFO 10620 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-29 14:59:20.209  INFO 10620 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-29 14:59:20.210  INFO 10620 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-29 14:59:20.213  INFO 10620 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-29 14:59:20.517  INFO 10620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 14:59:20.811  INFO 10620 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52f47e9d: startup date [Tue May 29 14:59:17 CST 2018]; root of context hierarchy
+2018-05-29 14:59:20.930  INFO 10620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.southgis.ibase.casclient.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-05-29 14:59:20.934  INFO 10620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-05-29 14:59:20.937  INFO 10620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2()
+2018-05-29 14:59:20.937  INFO 10620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-05-29 14:59:20.941  INFO 10620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-29 14:59:20.943  INFO 10620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-29 14:59:20.982  INFO 10620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 14:59:20.983  INFO 10620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 14:59:21.067  INFO 10620 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-29 14:59:21.211  INFO 10620 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-29 14:59:21.297  INFO 10620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8103 (http) with context path ''
+2018-05-29 14:59:21.304  INFO 10620 --- [main] c.s.i.casclient.CasClientApplication     : Started CasClientApplication in 5.031 seconds (JVM running for 11.481)
+2018-05-29 15:01:25.236  INFO 10620 --- [http-nio-8103-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-29 15:01:25.237  INFO 10620 --- [http-nio-8103-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-29 15:01:25.274  INFO 10620 --- [http-nio-8103-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-05-29 15:03:33.285  INFO 10620 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52f47e9d: startup date [Tue May 29 14:59:17 CST 2018]; root of context hierarchy
+2018-05-29 15:03:33.288  INFO 10620 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-29 15:03:44.586  INFO 22308 --- [main] c.s.i.casclient.CasClientApplication     : Starting CasClientApplication on DESKTOP-1L37PM6 with PID 22308 (E:\ibase2.0\ibase_springboot\cas-client\target\classes started by simon in E:\ibase2.0\ibase_springboot\cas-client)
+2018-05-29 15:03:44.590  INFO 22308 --- [main] c.s.i.casclient.CasClientApplication     : No active profile set, falling back to default profiles: default
+2018-05-29 15:03:44.656  INFO 22308 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5abefe95: startup date [Tue May 29 15:03:44 CST 2018]; root of context hierarchy
+2018-05-29 15:03:46.709  INFO 22308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8103 (http)
+2018-05-29 15:03:46.747  INFO 22308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-29 15:03:46.748  INFO 22308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-29 15:03:46.764  INFO 22308 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\tools\apps\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;D:\dev\tools\apps\Java\jdk1.8.0_31\bin;D:\dev\tools\apps\maven\bin;D:\dev\tools\apps\svn\bin;D:\dev\tools\apps\TortoiseGit\bin;D:\dev\tools\apps\Git\cmd;D:\dev\tools\apps\putty\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.]
+2018-05-29 15:03:47.066  INFO 22308 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-29 15:03:47.073  INFO 22308 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-29 15:03:47.075  INFO 22308 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2419 ms
+2018-05-29 15:03:47.297  INFO 22308 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-29 15:03:47.303  INFO 22308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-29 15:03:47.304  INFO 22308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-29 15:03:47.305  INFO 22308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-29 15:03:47.306  INFO 22308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-29 15:03:47.499  INFO 22308 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 15:03:47.890  INFO 22308 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5abefe95: startup date [Tue May 29 15:03:44 CST 2018]; root of context hierarchy
+2018-05-29 15:03:48.044  INFO 22308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.southgis.ibase.casclient.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-05-29 15:03:48.076  INFO 22308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-05-29 15:03:48.087  INFO 22308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2()
+2018-05-29 15:03:48.104  INFO 22308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-05-29 15:03:48.132  INFO 22308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-29 15:03:48.142  INFO 22308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-29 15:03:48.213  INFO 22308 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 15:03:48.250  INFO 22308 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 15:03:48.399  INFO 22308 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-29 15:03:48.724  INFO 22308 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-29 15:03:48.997  INFO 22308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8103 (http) with context path ''
+2018-05-29 15:03:49.008  INFO 22308 --- [main] c.s.i.casclient.CasClientApplication     : Started CasClientApplication in 5.133 seconds (JVM running for 10.427)
+2018-05-29 15:04:33.774  INFO 22308 --- [http-nio-8103-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-29 15:04:33.776  INFO 22308 --- [http-nio-8103-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-29 15:04:33.813  INFO 22308 --- [http-nio-8103-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-05-29 15:08:08.368  INFO 22308 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5abefe95: startup date [Tue May 29 15:03:44 CST 2018]; root of context hierarchy
+2018-05-29 15:08:08.371  INFO 22308 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-29 15:59:34.359  INFO 17316 --- [main] c.s.i.casclient.CasClientApplication     : Starting CasClientApplication on DESKTOP-1L37PM6 with PID 17316 (E:\ibase2.0\ibase_springboot\cas-client\target\classes started by simon in E:\ibase2.0\ibase_springboot\cas-client)
+2018-05-29 15:59:34.365  INFO 17316 --- [main] c.s.i.casclient.CasClientApplication     : No active profile set, falling back to default profiles: default
+2018-05-29 15:59:34.476  INFO 17316 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30837c50: startup date [Tue May 29 15:59:34 CST 2018]; root of context hierarchy
+2018-05-29 15:59:37.142  INFO 17316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8103 (http)
+2018-05-29 15:59:37.186  INFO 17316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-29 15:59:37.186  INFO 17316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-29 15:59:37.203  INFO 17316 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\tools\apps\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;D:\dev\tools\apps\Java\jdk1.8.0_31\bin;D:\dev\tools\apps\maven\bin;D:\dev\tools\apps\svn\bin;D:\dev\tools\apps\TortoiseGit\bin;D:\dev\tools\apps\Git\cmd;D:\dev\tools\apps\putty\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.]
+2018-05-29 15:59:37.543  INFO 17316 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-29 15:59:37.548  INFO 17316 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-29 15:59:37.549  INFO 17316 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3073 ms
+2018-05-29 15:59:37.770  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-29 15:59:37.777  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-29 15:59:37.778  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-29 15:59:37.778  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-29 15:59:37.779  INFO 17316 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-29 15:59:37.998  INFO 17316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 15:59:38.302  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30837c50: startup date [Tue May 29 15:59:34 CST 2018]; root of context hierarchy
+2018-05-29 15:59:38.405  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.southgis.ibase.casclient.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-05-29 15:59:38.411  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-05-29 15:59:38.411  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2()
+2018-05-29 15:59:38.412  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-05-29 15:59:38.415  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-29 15:59:38.416  INFO 17316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-29 15:59:38.454  INFO 17316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 15:59:38.454  INFO 17316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 15:59:38.532  INFO 17316 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-29 15:59:38.716  INFO 17316 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-29 15:59:38.799  INFO 17316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8103 (http) with context path ''
+2018-05-29 15:59:38.804  INFO 17316 --- [main] c.s.i.casclient.CasClientApplication     : Started CasClientApplication in 5.22 seconds (JVM running for 9.876)
+2018-05-29 16:09:35.955  INFO 17316 --- [http-nio-8103-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-29 16:09:35.956  INFO 17316 --- [http-nio-8103-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-29 16:09:35.978  INFO 17316 --- [http-nio-8103-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-05-29 16:25:59.601  INFO 12824 --- [main] c.s.i.casclient.CasClientApplication     : Starting CasClientApplication on DESKTOP-1L37PM6 with PID 12824 (E:\ibase2.0\ibase_springboot\cas-client\target\classes started by simon in E:\ibase2.0\ibase_springboot\cas-client)
+2018-05-29 16:25:59.609  INFO 12824 --- [main] c.s.i.casclient.CasClientApplication     : No active profile set, falling back to default profiles: default
+2018-05-29 16:25:59.705  INFO 12824 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5619545e: startup date [Tue May 29 16:25:59 CST 2018]; root of context hierarchy
+2018-05-29 16:26:02.051  INFO 12824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8103 (http)
+2018-05-29 16:26:02.098  INFO 12824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-29 16:26:02.099  INFO 12824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-29 16:26:02.115  INFO 12824 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\tools\apps\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;D:\dev\tools\apps\Java\jdk1.8.0_31\bin;D:\dev\tools\apps\maven\bin;D:\dev\tools\apps\svn\bin;D:\dev\tools\apps\TortoiseGit\bin;D:\dev\tools\apps\Git\cmd;D:\dev\tools\apps\putty\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.]
+2018-05-29 16:26:02.525  INFO 12824 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-29 16:26:02.533  INFO 12824 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-29 16:26:02.533  INFO 12824 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2828 ms
+2018-05-29 16:26:02.739  INFO 12824 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-29 16:26:02.745  INFO 12824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-29 16:26:02.746  INFO 12824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-29 16:26:02.746  INFO 12824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-29 16:26:02.747  INFO 12824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-29 16:26:02.955  INFO 12824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:26:03.318  INFO 12824 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5619545e: startup date [Tue May 29 16:25:59 CST 2018]; root of context hierarchy
+2018-05-29 16:26:03.424  INFO 12824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.southgis.ibase.casclient.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-05-29 16:26:03.428  INFO 12824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2()
+2018-05-29 16:26:03.428  INFO 12824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-05-29 16:26:03.429  INFO 12824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-05-29 16:26:03.432  INFO 12824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-29 16:26:03.435  INFO 12824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-29 16:26:03.474  INFO 12824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:26:03.475  INFO 12824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:26:03.587  INFO 12824 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-29 16:26:03.761  INFO 12824 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-29 16:26:03.844  INFO 12824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8103 (http) with context path ''
+2018-05-29 16:26:03.850  INFO 12824 --- [main] c.s.i.casclient.CasClientApplication     : Started CasClientApplication in 5.247 seconds (JVM running for 11.359)
+2018-05-29 16:27:27.890  INFO 12824 --- [http-nio-8103-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-29 16:27:27.890  INFO 12824 --- [http-nio-8103-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-29 16:27:27.911  INFO 12824 --- [http-nio-8103-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-05-29 16:28:01.635  INFO 4848 --- [main] c.s.i.casclient.CasClientApplication     : Starting CasClientApplication on DESKTOP-1L37PM6 with PID 4848 (E:\ibase2.0\ibase_springboot\cas-client\target\classes started by simon in E:\ibase2.0\ibase_springboot\cas-client)
+2018-05-29 16:28:01.640  INFO 4848 --- [main] c.s.i.casclient.CasClientApplication     : No active profile set, falling back to default profiles: default
+2018-05-29 16:28:01.727  INFO 4848 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45c8495d: startup date [Tue May 29 16:28:01 CST 2018]; root of context hierarchy
+2018-05-29 16:28:04.209  INFO 4848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8103 (http)
+2018-05-29 16:28:04.251  INFO 4848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-29 16:28:04.252  INFO 4848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-29 16:28:04.264  INFO 4848 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\tools\apps\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;D:\dev\tools\apps\Java\jdk1.8.0_31\bin;D:\dev\tools\apps\maven\bin;D:\dev\tools\apps\svn\bin;D:\dev\tools\apps\TortoiseGit\bin;D:\dev\tools\apps\Git\cmd;D:\dev\tools\apps\putty\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.]
+2018-05-29 16:28:04.596  INFO 4848 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-29 16:28:04.603  INFO 4848 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-29 16:28:04.603  INFO 4848 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2876 ms
+2018-05-29 16:28:04.824  INFO 4848 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-29 16:28:04.832  INFO 4848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-29 16:28:04.833  INFO 4848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-29 16:28:04.834  INFO 4848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-29 16:28:04.834  INFO 4848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-29 16:28:05.050  INFO 4848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:28:05.331  INFO 4848 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45c8495d: startup date [Tue May 29 16:28:01 CST 2018]; root of context hierarchy
+2018-05-29 16:28:05.440  INFO 4848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.southgis.ibase.casclient.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-05-29 16:28:05.443  INFO 4848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2()
+2018-05-29 16:28:05.444  INFO 4848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-05-29 16:28:05.444  INFO 4848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-05-29 16:28:05.447  INFO 4848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-29 16:28:05.448  INFO 4848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-29 16:28:05.485  INFO 4848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:28:05.487  INFO 4848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:28:05.570  INFO 4848 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-29 16:28:05.763  INFO 4848 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-29 16:28:05.852  INFO 4848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8103 (http) with context path ''
+2018-05-29 16:28:05.857  INFO 4848 --- [main] c.s.i.casclient.CasClientApplication     : Started CasClientApplication in 5.073 seconds (JVM running for 9.826)
+2018-05-29 16:28:34.775  INFO 4848 --- [http-nio-8103-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-29 16:28:34.776  INFO 4848 --- [http-nio-8103-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-29 16:28:34.800  INFO 4848 --- [http-nio-8103-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-05-29 16:47:44.619  INFO 8716 --- [main] c.s.i.casclient.CasClientApplication     : Starting CasClientApplication on DESKTOP-1L37PM6 with PID 8716 (E:\ibase2.0\ibase_springboot\cas-client\target\classes started by simon in E:\ibase2.0\ibase_springboot\cas-client)
+2018-05-29 16:47:44.624  INFO 8716 --- [main] c.s.i.casclient.CasClientApplication     : No active profile set, falling back to default profiles: default
+2018-05-29 16:47:44.732  INFO 8716 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@727c700e: startup date [Tue May 29 16:47:44 CST 2018]; root of context hierarchy
+2018-05-29 16:47:46.829  INFO 8716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8103 (http)
+2018-05-29 16:47:46.864  INFO 8716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-29 16:47:46.865  INFO 8716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-29 16:47:46.877  INFO 8716 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\tools\apps\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;D:\dev\tools\apps\Java\jdk1.8.0_31\bin;D:\dev\tools\apps\maven\bin;D:\dev\tools\apps\svn\bin;D:\dev\tools\apps\TortoiseGit\bin;D:\dev\tools\apps\Git\cmd;D:\dev\tools\apps\putty\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.]
+2018-05-29 16:47:47.200  INFO 8716 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-29 16:47:47.207  INFO 8716 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-29 16:47:47.207  INFO 8716 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2475 ms
+2018-05-29 16:47:47.470  INFO 8716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-29 16:47:47.470  INFO 8716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-29 16:47:47.471  INFO 8716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-29 16:47:47.471  INFO 8716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-29 16:47:47.471  INFO 8716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-05-29 16:47:47.472  INFO 8716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-05-29 16:47:47.472  INFO 8716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-05-29 16:47:47.472  INFO 8716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-05-29 16:47:47.473  INFO 8716 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-29 16:47:47.511  INFO 8716 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://passport.sso.com:8100/cas]
+2018-05-29 16:47:47.516  INFO 8716 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://passport.sso.com:8103]
+2018-05-29 16:47:47.519  INFO 8716 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-05-29 16:47:47.519  INFO 8716 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://passport.sso.com:8100/cas]
+2018-05-29 16:47:47.521  INFO 8716 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://passport.sso.com:8103]
+2018-05-29 16:47:47.522  INFO 8716 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://passport.sso.com:8100/cas]
+2018-05-29 16:47:47.522  INFO 8716 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-05-29 16:47:47.522  INFO 8716 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.southgis.ibase.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-05-29 16:47:47.527 ERROR 8716 --- [localhost-startStop-1] o.j.c.c.a.AuthenticationFilter           : Could not instantiate class [com.southgis.ibase.cas.auth.SimpleUrlPatternMatcherStrategy]
+
+java.lang.IllegalArgumentException: com.southgis.ibase.cas.auth.SimpleUrlPatternMatcherStrategy class not found.
+	at org.jasig.cas.client.util.ReflectUtils.loadClass(ReflectUtils.java:53) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.util.ReflectUtils.newInstance(ReflectUtils.java:65) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.authentication.AuthenticationFilter.initInternal(AuthenticationFilter.java:110) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.util.AbstractCasFilter.init(AbstractCasFilter.java:72) [cas-client-core-3.5.0.jar:3.5.0]
+	at org.apache.catalina.core.ApplicationFilterConfig.initFilter(ApplicationFilterConfig.java:285) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterConfig.<init>(ApplicationFilterConfig.java:112) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:4637) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5282) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2018-05-29 16:47:47.706  INFO 8716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:47:48.077  INFO 8716 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@727c700e: startup date [Tue May 29 16:47:44 CST 2018]; root of context hierarchy
+2018-05-29 16:47:48.238  INFO 8716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.southgis.ibase.casclient.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-05-29 16:47:48.254  INFO 8716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-05-29 16:47:48.256  INFO 8716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2()
+2018-05-29 16:47:48.256  INFO 8716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-05-29 16:47:48.264  INFO 8716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-29 16:47:48.265  INFO 8716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-29 16:47:48.280  INFO 8716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-05-29 16:47:48.315  INFO 8716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:47:48.315  INFO 8716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:47:48.498  INFO 8716 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-29 16:47:48.743  INFO 8716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-29 16:47:48.864  INFO 8716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8103 (http) with context path ''
+2018-05-29 16:47:48.892  INFO 8716 --- [main] c.s.i.casclient.CasClientApplication     : Started CasClientApplication in 5.187 seconds (JVM running for 11.479)
+2018-05-29 16:48:16.280  INFO 8716 --- [http-nio-8103-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-29 16:48:16.280  INFO 8716 --- [http-nio-8103-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-29 16:48:16.303  INFO 8716 --- [http-nio-8103-exec-9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-05-29 16:50:27.509  INFO 19544 --- [main] c.s.i.casclient.CasClientApplication     : Starting CasClientApplication on DESKTOP-1L37PM6 with PID 19544 (E:\ibase2.0\ibase_springboot\cas-client\target\classes started by simon in E:\ibase2.0\ibase_springboot\cas-client)
+2018-05-29 16:50:27.513  INFO 19544 --- [main] c.s.i.casclient.CasClientApplication     : No active profile set, falling back to default profiles: default
+2018-05-29 16:50:27.584  INFO 19544 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d70984e: startup date [Tue May 29 16:50:27 CST 2018]; root of context hierarchy
+2018-05-29 16:50:29.700  INFO 19544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8103 (http)
+2018-05-29 16:50:29.747  INFO 19544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-29 16:50:29.748  INFO 19544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-29 16:50:29.765  INFO 19544 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev\tools\apps\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;D:\dev\tools\apps\Java\jdk1.8.0_31\bin;D:\dev\tools\apps\maven\bin;D:\dev\tools\apps\svn\bin;D:\dev\tools\apps\TortoiseGit\bin;D:\dev\tools\apps\Git\cmd;D:\dev\tools\apps\putty\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.]
+2018-05-29 16:50:30.090  INFO 19544 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-29 16:50:30.096  INFO 19544 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-29 16:50:30.096  INFO 19544 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2512 ms
+2018-05-29 16:50:30.376  INFO 19544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-29 16:50:30.378  INFO 19544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-29 16:50:30.378  INFO 19544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-29 16:50:30.378  INFO 19544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-29 16:50:30.379  INFO 19544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-05-29 16:50:30.379  INFO 19544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'cas30ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-05-29 16:50:30.379  INFO 19544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationFilter' to urls: [/*]
+2018-05-29 16:50:30.380  INFO 19544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-05-29 16:50:30.381  INFO 19544 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-29 16:50:30.419  INFO 19544 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://passport.sso.com:8100/cas]
+2018-05-29 16:50:30.423  INFO 19544 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://passport.sso.com:8103]
+2018-05-29 16:50:30.424  INFO 19544 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [useSession] loaded from FilterConfig.getInitParameter with value [true]
+2018-05-29 16:50:30.425  INFO 19544 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://passport.sso.com:8100/cas]
+2018-05-29 16:50:30.427  INFO 19544 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [serverName] loaded from FilterConfig.getInitParameter with value [http://passport.sso.com:8103]
+2018-05-29 16:50:30.427  INFO 19544 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://passport.sso.com:8100/cas]
+2018-05-29 16:50:30.427  INFO 19544 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignorePattern] loaded from FilterConfig.getInitParameter with value [.*]
+2018-05-29 16:50:30.427  INFO 19544 --- [localhost-startStop-1] .j.c.c.c.WebXmlConfigurationStrategyImpl : Property [ignoreUrlPatternType] loaded from FilterConfig.getInitParameter with value [com.southgis.ibase.cas.auth.SimpleUrlPatternMatcherStrategy]
+2018-05-29 16:50:30.432 ERROR 19544 --- [localhost-startStop-1] o.j.c.c.a.AuthenticationFilter           : Could not instantiate class [com.southgis.ibase.cas.auth.SimpleUrlPatternMatcherStrategy]
+
+java.lang.IllegalArgumentException: com.southgis.ibase.cas.auth.SimpleUrlPatternMatcherStrategy class not found.
+	at org.jasig.cas.client.util.ReflectUtils.loadClass(ReflectUtils.java:53) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.util.ReflectUtils.newInstance(ReflectUtils.java:65) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.authentication.AuthenticationFilter.initInternal(AuthenticationFilter.java:110) ~[cas-client-core-3.5.0.jar:3.5.0]
+	at org.jasig.cas.client.util.AbstractCasFilter.init(AbstractCasFilter.java:72) [cas-client-core-3.5.0.jar:3.5.0]
+	at org.apache.catalina.core.ApplicationFilterConfig.initFilter(ApplicationFilterConfig.java:285) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterConfig.<init>(ApplicationFilterConfig.java:112) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:4637) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5282) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2018-05-29 16:50:30.600  INFO 19544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:50:30.955  INFO 19544 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d70984e: startup date [Tue May 29 16:50:27 CST 2018]; root of context hierarchy
+2018-05-29 16:50:31.084  INFO 19544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.southgis.ibase.casclient.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-05-29 16:50:31.087  INFO 19544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut1]}" onto public org.springframework.web.servlet.ModelAndView com.southgis.ibase.casclient.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+2018-05-29 16:50:31.088  INFO 19544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut/success]}" onto public java.lang.String com.southgis.ibase.casclient.controller.LoginController.loginOut2()
+2018-05-29 16:50:31.088  INFO 19544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginOut2]}" onto public org.springframework.web.servlet.ModelAndView com.southgis.ibase.casclient.controller.LoginController.loginOut2(javax.servlet.http.HttpSession)
+2018-05-29 16:50:31.092  INFO 19544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-29 16:50:31.095  INFO 19544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-29 16:50:31.107  INFO 19544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-05-29 16:50:31.131  INFO 19544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:50:31.131  INFO 19544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-29 16:50:31.345  INFO 19544 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-29 16:50:31.666  INFO 19544 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-29 16:50:31.804  INFO 19544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8103 (http) with context path ''
+2018-05-29 16:50:31.812  INFO 19544 --- [main] c.s.i.casclient.CasClientApplication     : Started CasClientApplication in 4.973 seconds (JVM running for 11.432)
+2018-05-29 16:50:54.099  INFO 19544 --- [http-nio-8103-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-29 16:50:54.099  INFO 19544 --- [http-nio-8103-exec-5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-29 16:50:54.137  INFO 19544 --- [http-nio-8103-exec-5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
