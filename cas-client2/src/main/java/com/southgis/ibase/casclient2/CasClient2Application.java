@@ -3,6 +3,7 @@ package com.southgis.ibase.casclient2;
 import org.jasig.cas.client.authentication.AuthenticationFilter;
 import org.jasig.cas.client.session.SingleSignOutFilter;
 import org.jasig.cas.client.session.SingleSignOutHttpSessionListener;
+import org.jasig.cas.client.util.AssertionThreadLocalFilter;
 import org.jasig.cas.client.util.HttpServletRequestWrapperFilter;
 import org.jasig.cas.client.validation.Cas30ProxyReceivingTicketValidationFilter;
 import org.springframework.boot.SpringApplication;
@@ -28,12 +29,14 @@ public class CasClient2Application {
   private static final String SERVER_NAME = "http://passport.sso.com:8104";
   
   /**
-   * 登录过滤器
+   * SingleSignOutFilter 登出过滤器
+   * 该过滤器用于实现单点登出功能，可选配置
    * @return
    */
   @Bean
   public FilterRegistrationBean filterSingleRegistration() {
     FilterRegistrationBean registration = new FilterRegistrationBean();
+    //用来使session失效的
     registration.setFilter(new SingleSignOutFilter());
     // 设定匹配的路径
     registration.addUrlPatterns("/*");
@@ -46,7 +49,8 @@ public class CasClient2Application {
   }
   
   /**
-   * 过滤验证器
+   * Cas30ProxyReceivingTicketValidationFilter 验证过滤器
+   * 该过滤器负责对Ticket的校验工作，必须启用它
    * @return
    */
   @Bean
@@ -66,7 +70,7 @@ public class CasClient2Application {
   }
   
   /**
-   * 授权过滤器
+   * AuthenticationFilter 授权过滤器
    * @return
    */
   @Bean
@@ -89,7 +93,9 @@ public class CasClient2Application {
   }
   
   /**
-   * wraper过滤器
+   * HttpServletRequestWrapperFilter wraper过滤器
+   * 该过滤器负责实现HttpServletRequest请求的包裹
+   * 比如允许开发者通过HttpServletRequest的getRemoteUser()方法获得SSO登录用户的登录名，可选配置。
    * @return
    */
   @Bean
@@ -104,12 +110,33 @@ public class CasClient2Application {
   }
   
   /**
+   * AssertionThreadLocalFilter
+   *
+   * 该过滤器使得开发者可以通过org.jasig.cas.client.util.AssertionHolder来获取用户的登录名。
+   * 比如AssertionHolder.getAssertion().getPrincipal().getName()。
+   *
+   * @return
+   */
+  @Bean
+  public FilterRegistrationBean filterAssertionThreadLocalRegistration() {
+      FilterRegistrationBean registration = new FilterRegistrationBean();
+      registration.setFilter(new AssertionThreadLocalFilter());
+      // 设定匹配的路径
+      registration.addUrlPatterns("/");
+      // 设定加载的顺序
+      registration.setOrder(1);
+      return registration;
+    }
+  
+  /**
    * 添加监听器
+   * 用于单点退出，该过滤器用于实现单点登出功能，可选配置
    * @return
    */
   @Bean
   public ServletListenerRegistrationBean<EventListener> singleSignOutListenerRegistration(){
     ServletListenerRegistrationBean<EventListener> registrationBean = new ServletListenerRegistrationBean<EventListener>();
+    //用于使session过期时移除其对应的映射关系
     registrationBean.setListener(new SingleSignOutHttpSessionListener());
     registrationBean.setOrder(1);
     return registrationBean;
